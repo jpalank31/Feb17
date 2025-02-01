@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>February 17 🥸</title>
+    <style>
+      body {
+        background: linear-gradient(
+          68.6deg,
+          rgb(253, 174, 242) 1.8%,
+          rgb(181, 255, 255) 100.5%
+        );
+        height: 100vh; /* Full viewport height */
+        text-align: center;
+        margin: 0; /* Reset margin */
+        padding: 20px; /* Add padding for spacing */
+      }
+      h1 {
+        font-size: 2.5rem; /* Responsive font size */
+        margin: 20px 0; /* Spacing above and below */
+      }
+      h3 {
+        font-size: 1.8rem; /* Responsive font size */
+        margin: 20px auto 5px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 1.3rem; /* Responsive font size */
+        max-width: 470px; /* Max width for readability */
+        margin: 10px auto; /* Center align */
+        padding: 0 15px; /* Padding for mobile */
+      }
+      .subp {
+        font-size: 1.2rem;
+      }
+      .subp2 {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 10px;
+      }
+
+      button {
+        padding: 10px 20px; /* Increased padding for touch targets */
+        font-size: 1rem; /* Responsive font size */
+        cursor: pointer; /* Pointer cursor */
+        border: none; /* Remove default border */
+        background-color: rgb(247, 227, 239); /* Button background color */
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s; /* Smooth transition */
+      }
+      button:hover {
+        background-color: #5c5470; /* Hover effect */
+        color: #fafafa; /* Text color on hover */
+      }
+      /* Media Queries for Responsive Design */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.75rem; /* Smaller heading size */
+        }
+        h3 {
+          font-size: 1.5rem; /* Smaller subheading size */
+        }
+        p {
+          font-size: 1.1rem; /* Smaller paragraph text */
+        }
+        .subp {
+          font-size: 1rem;
+          max-width: 500px;
+        }
+        .subp2 {
+          font-size: 0.9rem;
+          max-width: 500px;
+        }
+        button {
+          font-size: 0.9rem; /* Smaller button text */
+          padding: 8px 16px; /* Adjust button padding */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>✨Monday, February 17, 2025✨</h1>
+    <h3>Let's have one final music monday!</h3>
+    <br />
+    <p>
+      Today I'm going to give you some options so you can choose based on your
+      mood.
+      <br />
+      <br />
+
+      <button class="musicOptions">Select a song*</button>
+      <br />
+      <br />
+    </p>
+    <p class="subp">
+      *Editor's note: Please keep in mind the coder who wrote this page does not
+      have very advanced knowledge yet. For this to work, you must type your
+      answers exactly as prompted. Thank you for your attention to this matter.
+    </p>
+    <p>
+      <br />
+      <a href="https://jpalank31.github.io/Glimmer1/">
+        <button>Back to homepage</button>
+      </a>
+    </p>
+
+    <p class="subp2">p.s. 2 more sleeps.</p>
+    <script>
+      function music() {
+        let musicChoice = prompt(
+          "Please type the number to select a song. 1=Hits right every time. 2=Lovey. 3=Slow and reflective. 4=Reassurance. 5=Mood boost. 6=Oldie but a goodie. 7=Get lost in a good memory."
+        );
+
+        if (musicChoice) {
+          switch (musicChoice) {
+            case "1":
+              window.open(
+                "https://www.youtube.com/watch?v=JnqG2Z68Cro",
+                "_blank"
+              ); // Option 1 URL
+              break;
+            case "2":
+              window.open(
+                "https://www.youtube.com/watch?v=HgvqCJjn8Mg",
+                "_blank"
+              ); // Option 2 URL
+              break;
+            case "3":
+              window.open(
+                "https://www.youtube.com/watch?v=5XzDDRZo7CY",
+                "_blank"
+              ); // Option 3 URL
+              break;
+            case "4":
+              window.open(
+                "https://www.youtube.com/watch?v=mYADDo7x83o",
+                "_blank"
+              ); // Option 4 URL
+              break;
+            case "5":
+              window.open(
+                "https://www.youtube.com/watch?v=MS6VGlAV7MM",
+                "_blank"
+              ); // Option 5 URL
+              break;
+            case "6":
+              window.open(
+                "https://www.youtube.com/watch?v=8Afffdv5Tfg",
+                "_blank"
+              ); // Option 6 URL
+              break;
+            case "7":
+              window.open(
+                "https://www.youtube.com/watch?v=SyXfJi2KZ-A",
+                "_blank"
+              ); // Option 7 URL
+              break;
+            default:
+              alert("Please enter a valid option (1-7).");
+          }
+        }
+      }
+
+      let musicOptions = document.querySelector("button");
+      musicOptions.addEventListener("click", music);
+
+      history.scrollRestoration = "manual";
+      window.onload = function () {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+      };
+    </script>
+  </body>
+</html>
